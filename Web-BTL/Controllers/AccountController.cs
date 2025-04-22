@@ -83,7 +83,7 @@ namespace Web_BTL.Controllers
                     await _dataContext.SaveChangesAsync();
 
                     HttpContext.Session.SetString("LogIn Session", model.UserEmail);
-                    TempData["SuccessMessage"] = "Đăng ký thành công!"
+                    TempData["SuccessMessage"] = "Đăng ký thành công!";
                     return RedirectToAction(nameof(Index), "Home");
                 }
 
